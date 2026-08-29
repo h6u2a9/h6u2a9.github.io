@@ -436,18 +436,15 @@ footer {
     footer {
         width: 100%;
         height: auto;
-
         padding: 20px 0 12px;
+        margin-bottom:0;
     }
 
     .contact {
         width: 95%;
-
         margin: 0 auto;
-
         display: flex;
         flex-direction: row;
-
         justify-content: space-between;
         align-items: flex-start;
     }
