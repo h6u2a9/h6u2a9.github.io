@@ -268,34 +268,33 @@ main{
 ========================= */
 
 .me{
-    width:100%;
     display:flex;
     flex-direction:column;
     align-items:center;
-    padding:10px 20px 40px;
+    gap:0;
+    padding:10px 20px 30px;
 }
 
 .me img{
     order:1;
     width:220px;
     height:auto;
-    margin:20px auto 10px;
+    margin:20px 0 0;
 }
 
 .me div{
     order:2;
     width:90%;
-    margin:0;
+    margin-top:-20px;
     text-align:center;
 }
 
 .me h2{
     font-size:42px;
-    margin:10px 0 10px;
+    margin:0 0 10px;
 }
 
 .subtitle{
-    width:100%;
     max-width:280px;
     margin:0 auto 20px;
     font-size:22px;
