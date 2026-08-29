@@ -268,101 +268,51 @@ main{
 ========================= */
 
 .me{
-
     width:100%;
-
     display:flex;
-
     flex-direction:column;
-
     align-items:center;
-
     padding:20px 0 40px;
-
 }
-
-
-/* 圖片移到最上面 */
 
 .me img{
-
     order:1;
-
     width:220px;
-
     height:auto;
-
-    margin:20px auto 30px;
-
+    margin:20px auto 5px;
 }
-
-
-/* 文字區 */
 
 .me div{
-
     order:2;
-
     width:90%;
-
     margin:0 auto;
-
     text-align:center;
-
 }
-
-
-/* 姓名 */
 
 .me h2{
-
     font-size:42px;
-
-    margin:20px 0 15px;
-
+    margin:5px 0 15px;
     text-align:center;
-
 }
-
-
-/* 系所 */
 
 .subtitle{
-
-    width:100%;
-
-    max-width:320px;
-
-    margin:0 auto 35px;
-
-    font-size:24px;
-
-    line-height:1.8;
-
+    width:90%;
+    max-width:300px;
+    margin:0 auto 20px;
+    font-size:22px;
+    line-height:1.6;
     text-align:center;
-
 }
-
-
-/* 自我介紹 */
 
 .intro{
-
     width:90%;
-
     margin:0 auto;
-
 }
 
-
 .intro p{
-
-    font-size:18px;
-
+    font-size:17px;
     line-height:1.8;
-
     text-align:left;
-
 }
 
 
