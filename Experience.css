@@ -306,8 +306,8 @@ footer {
         margin-bottom: 5px;
     }
     .date{
-    color:#000;
-    text-decoration:none;
+    color:#000 !important;
+    text-decoration:none !important;
     }
 
     /* =========================
