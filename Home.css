@@ -263,13 +263,13 @@ main{
 }
 
 
+/* =========================
+   Home Mobile Layout
+========================= */
+
 .me{
 
-    width:90%;
-
-    margin:0 auto;
-
-    padding:10px 0 30px;
+    width:100%;
 
     display:flex;
 
@@ -277,54 +277,93 @@ main{
 
     align-items:center;
 
+    padding:20px 0 40px;
+
 }
 
 
-/* Photo */
+/* 圖片移到最上面 */
 
 .me img{
-    width:180px;
-    order:-1;
+
+    order:1;
+
+    width:220px;
+
     height:auto;
-    margin:20px auto 0;
+
+    margin:20px auto 30px;
+
 }
 
 
 /* 文字區 */
 
 .me div{
-    width:100%;
+
+    order:2;
+
+    width:90%;
+
+    margin:0 auto;
+
     text-align:center;
-    margin-top:-80px
+
 }
 
+
+/* 姓名 */
 
 .me h2{
-    font-size:38px;
-    margin:10px 0 15px;
+
+    font-size:42px;
+
+    margin:20px 0 15px;
+
+    text-align:center;
+
 }
 
+
+/* 系所 */
 
 .subtitle{
-    width:90%;
-    margin:0 auto 20px;
-    font-size:20px;
+
+    width:100%;
+
+    max-width:320px;
+
+    margin:0 auto 35px;
+
+    font-size:24px;
+
     line-height:1.8;
+
     text-align:center;
-    max-width:280px
+
 }
 
 
-/* Intro */
+/* 自我介紹 */
 
 .intro{
-    width:95%;
-    margin:15px auto 0;
-    font-size:17px;
-    line-height:1.8;
-    text-align:left;
+
+    width:90%;
+
+    margin:0 auto;
+
 }
 
+
+.intro p{
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    text-align:left;
+
+}
 
 
 footer{
