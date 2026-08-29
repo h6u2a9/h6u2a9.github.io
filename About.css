@@ -483,16 +483,3 @@ footer {
         text-align: center;
     }
 }
-@media screen and (max-width:768px){
-
-body{
-    margin:0 !important;
-    padding:0 !important;
-}
-
-footer{
-    display:block;
-    margin-bottom:-1px !important;
-}
-
-}
