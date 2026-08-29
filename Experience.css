@@ -286,35 +286,29 @@ footer {
 
     .work {
         width: 90%;
-
         margin: 55px auto 0;
     }
-
     .work > h3 {
         font-size: 32px;
-
         margin-bottom: 25px;
     }
-
     .work > div {
         width: 100%;
-
         padding: 22px 20px;
     }
-
     .work h4 {
         font-size: 22px;
-
         margin-bottom: 10px;
     }
-
     .work p {
         font-size: 17px;
         line-height: 1.7;
-
         margin-bottom: 5px;
     }
-
+    .date{
+    color:#000;
+    text-decoration:none;
+    }
 
     /* =========================
        Additional Experience
