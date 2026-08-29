@@ -1,0 +1,370 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    min-height: 100%;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+main {
+    width: 70%;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+
+header{
+    background-color: #123d7a;
+    height:80px;
+    width: 100%;
+}
+header a{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    color: white;
+    text-decoration: none;
+}
+
+header li{
+    display:inline ;
+    margin-right: 4vw;
+}
+header ul{
+    position: absolute;
+    right: 4vw;
+    top: 0;
+    line-height: 80px;
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    position: absolute;
+    left:120px;
+    top:0;
+    line-height: 80px;
+}
+nav a.active{
+    border-bottom: 3px solid white;
+    padding-bottom: 8px;
+}
+
+h2{
+    font-size: 48px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #123d7a;
+    width: 100%;
+    margin: 100px auto 40px;
+    border-bottom: 4px solid #123d7a;
+    text-align: center;
+}
+main {
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+main > img {
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    border: 1px solid #dddddd;
+}
+.download {
+    display: inline-block;
+    margin: 30px 0 50px;
+    padding: 12px 28px;
+    background-color: #123d7a;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+
+
+
+footer {
+    background-color: #123d7a;
+    color: white;
+    padding: 28px 20px 14px;
+}
+
+.contact {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    align-items: center;
+}
+
+.contact > div {
+    padding: 5px 30px;
+}
+.contact > div + div {
+    border-left: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.contact i {
+    width: 42px;
+    height: 42px;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 10px;
+    font-size: 19px;
+    color: white;
+}
+
+.contact h3 {
+    margin: 0 0 6px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+.contact a {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 14px;
+    text-decoration: none;
+
+    transition: 0.2s;
+}
+.contact a:hover {
+    color: white;
+    text-decoration: underline;
+}
+.copyright {
+    max-width: 1100px;
+    margin: 25px auto 0;
+    padding-top: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.65);
+}
+#menu-toggle,
+.menu-icon {
+    display: none;
+}
+@media screen and (max-width: 768px) {
+
+    /* =========================
+       Header
+    ========================= */
+
+    header {
+        width: 100%;
+        height: 70px;
+    }
+
+    nav {
+        position: relative;
+        width: 100%;
+        height: 70px;
+    }
+
+    /* Shao Po Hua 正中央 */
+    header h1 {
+        position: absolute;
+
+        left: 50%;
+        top: 50%;
+
+        transform: translate(-50%, -50%);
+
+        font-size: 26px;
+        line-height: normal;
+
+        white-space: nowrap;
+    }
+
+    /* 左側漢堡選單 */
+    .menu-icon {
+        display: block;
+
+        position: absolute;
+
+        left: 20px;
+        top: 50%;
+
+        transform: translateY(-50%);
+
+        color: white;
+        font-size: 32px;
+
+        cursor: pointer;
+
+        z-index: 1001;
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+
+    /* 選單預設收起 */
+    header ul {
+        display: none;
+
+        position: absolute;
+
+        top: 70px;
+        left: 0;
+
+        width: 100%;
+
+        background-color: #123d7a;
+
+        line-height: normal;
+
+        z-index: 1000;
+    }
+
+    /* 點漢堡後顯示 */
+    #menu-toggle:checked + .menu-icon + ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header li {
+        display: block;
+
+        width: 100%;
+        margin: 0;
+
+        text-align: center;
+    }
+
+    header li a {
+        display: block;
+
+        padding: 14px 0;
+
+        font-size: 18px;
+    }
+
+    /* 手機版不要 Resume active 底線 */
+    nav a.active {
+        border-bottom: none;
+        padding-bottom: 14px;
+    }
+
+
+    /* =========================
+       Resume
+    ========================= */
+
+    main {
+        width: 100%;
+
+        margin: 0;
+
+        display: block;
+        text-align: center;
+    }
+
+    /* Resume 標題 */
+    main > h2 {
+        width: 90%;
+
+        font-size: 40px;
+
+        margin: 60px auto 35px;
+    }
+
+    /* 履歷圖片 */
+    main > img {
+        width: 85%;
+        max-width: none;
+        height: auto;
+
+        display: block;
+
+        margin: 0 auto;
+
+        border: 1px solid #dddddd;
+    }
+
+    /* Download Resume */
+    .download {
+        display: block;
+
+        width: fit-content;
+
+        margin: 30px auto 50px;
+
+        padding: 12px 24px;
+
+        font-size: 16px;
+    }
+
+
+    /* =========================
+       Footer
+       維持桌機三欄
+    ========================= */
+
+    footer {
+        width: 100%;
+        height: auto;
+
+        padding: 20px 0 12px;
+    }
+
+    .contact {
+        width: 95%;
+
+        margin: 0 auto;
+
+        display: flex;
+        flex-direction: row;
+
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .contact > div {
+        flex: 1;
+        min-width: 0;
+
+        padding: 0 5px;
+
+        text-align: center;
+    }
+
+    .contact i {
+        font-size: 20px;
+    }
+
+    .contact h3 {
+        font-size: 13px;
+
+        margin-top: 5px;
+    }
+
+    .contact a {
+        font-size: 10px;
+
+        word-break: break-word;
+        overflow-wrap: anywhere;
+    }
+
+    .copyright {
+        font-size: 10px;
+
+        margin-top: 15px;
+
+        text-align: center;
+    }
+}
