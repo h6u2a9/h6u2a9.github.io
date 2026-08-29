@@ -298,18 +298,19 @@ main{
 
 
     .subtitle{
-        width:100%;
+        width:90%;
         max-width:350px;
         margin:0 auto 25px;
         font-size:22px;
         line-height:1.5;
+        text-align:center;
     }
 
 
     .intro{
         width:90%;
         margin:0 auto;
-        text-align:left;
+        text-align:justify;
         font-size:17px;
         line-height:1.8;
     }
