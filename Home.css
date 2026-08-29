@@ -263,56 +263,58 @@ main{
 }
 
 
-/* =========================
-   Home Mobile Layout
-========================= */
+/* ===== Home mobile fix ===== */
 
-.me{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    padding:10px 20px 30px;
+@media screen and (max-width:768px){
+
+    .me{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        padding:0 20px 30px;
+    }
+
+
+    .me img{
+        order:1;
+        width:220px;
+        height:auto;
+        margin:20px 0 0;
+    }
+
+
+    .me > div{
+        order:2;
+        width:100%;
+        margin-top:-40px;
+        text-align:center;
+    }
+
+
+    .me h2{
+        font-size:38px;
+        margin-bottom:15px;
+    }
+
+
+    .subtitle{
+        width:100%;
+        max-width:350px;
+        margin:0 auto 25px;
+        font-size:22px;
+        line-height:1.5;
+    }
+
+
+    .intro{
+        width:90%;
+        margin:0 auto;
+        text-align:left;
+        font-size:17px;
+        line-height:1.8;
+    }
+
 }
-
-.me img{
-    order:1;
-    width:220px;
-    height:220px;
-    object-fit:cover;
-    object-position:center top;
-    margin:20px 0 10px;
-}
-
-.me div{
-    order:2;
-    width:90%;
-    margin:0;
-    text-align:center;
-}
-
-.me h2{
-    font-size:38px;
-    margin:0 0 15px;
-}
-
-.subtitle{
-    width:100%;
-    max-width:350px;
-    margin:0 auto 25px;
-    font-size:22px;
-    line-height:1.5;
-}
-
-.intro{
-    width:90%;
-    margin:0 auto;
-}
-
-.intro p{
-    font-size:17px;
-    line-height:1.8;
-}
-
 
 footer{
     width:100%;
