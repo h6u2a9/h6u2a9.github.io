@@ -157,207 +157,145 @@ footer {
 .menu-icon {
     display: none;
 }
-@media screen and (max-width: 768px) {
+/* =================================
+   Mobile Responsive Design
+   ================================= */
 
-    /* =========================
-       Header
-    ========================= */
+@media (max-width: 768px) {
+
+
+    /* ---------- Header ---------- */
 
     header {
-        width: 100%;
-        height: 70px;
-    }
-    nav {
-        position: relative;
-        width: 100%;
         height: 70px;
     }
 
 
-    /* Shao Po Hua 放正中央 */
     header h1 {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 26px;
-        line-height: normal;
-        white-space: nowrap;
+
+        font-size: 24px;
+
+        left: 25px;
+
+        top: 0;
+
+        line-height: 70px;
+
     }
 
 
-    /* 漢堡按鈕 */
-    .menu-icon {
-        display: block;
-        position: absolute;
-        left: 20px;
-        top: 50%;
-        transform: translateY(-50%);
-        color: white;
-        font-size: 32px;
-        cursor: pointer;
-        z-index: 1001;
-    }
-
-
-    /* checkbox 不顯示 */
-    #menu-toggle {
-        display: none;
-    }
-
-
-    /* 導覽選單預設隱藏 */
     header ul {
-        display: none;
-        position: absolute;
-        top: 70px;
-        left: 0;
-        right: auto;
-        width: 100%;
-        background-color: #123d7a;
-        line-height: normal;
-        z-index: 1000;
+
+        top:70px;
+
     }
 
 
-    /* 點漢堡後顯示選單 */
-    #menu-toggle:checked + .menu-icon + ul {
-        display: flex;
-        flex-direction: column;
-    }
-    header li {
-        display: block;
+    header a {
 
-        width: 100%;
+        font-size:18px;
 
-        margin: 0;
-
-        text-align: center;
-    }
-    header li a {
-        display: block;
-
-        padding: 14px 0;
-
-        font-size: 18px;
-
-        text-decoration: none;
-    }
-    nav a.active {
-        border-bottom: none;
-        padding-bottom: 14px;
     }
 
 
-    /* =========================
-       Home 主要內容
-    ========================= */
+
+    /* ---------- Main ---------- */
 
     main {
-        width: 100%;
+
+        width:100%;
+
     }
+
+
+
+    /* ---------- Home Section ---------- */
+
     .me {
-        width: 90%;
 
-        margin: 60px auto;
+        width:100%;
 
-        display: flex;
-        flex-direction: column;
+        display:flex;
 
-        align-items: flex-start;
+        flex-direction:column;
+
+        align-items:center;
+
+        padding:30px 25px;
+
+        gap:20px;
+
     }
-    /* 文字區 */
-    .me > div {
-        width: 100%;
+
+
+
+    /* ---------- Photo ---------- */
+
+    .me img {
+
+     order:-1;
+
+     width:260px;
+
+     height:auto;
+
+     margin:10px auto 20px;
+
+     justify-self:center;
+
     }
-    /* 姓名 */
+
+
+
+
+    /* ---------- Name ---------- */
     .me h2 {
-        font-size: 40px;
-
-        margin: 0 0 15px;
+        font-size:38px;
+        color:#123d7a;
+        text-align:center;
+        margin:10px 0 15px;
     }
-    /* 學校 / 系所 */
+
+    /* ---------- Subtitle ---------- */
     .subtitle {
-        font-size: 23px;
-        line-height: 1.6;
-
-        margin: 0 0 25px;
+        font-size:22px;
+        color:#123d7a;
+        text-align:center;
+        line-height:1.8;
+        margin:0 0 25px;
     }
-    /* 個人介紹 */
+
+    /* ---------- Introduction ---------- */
     .intro {
-        width: 100%;
-
-        font-size: 18px;
-        line-height: 1.8;
-
-        margin: 0;
-
-        text-align: left;
-    }
-    /* 大頭照 */
-    .me > img {
-        width: 250px;
-        height: auto;
-
-        display: block;
-
-        margin: 35px auto 0;
+        width:100%;
+        font-size:18px;
+        line-height:2;
+        color:black;
+        text-align:left;
+        margin:0;
     }
 
+    /* ---------- Footer ---------- */
+  .contact {
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:0;
+    padding:25px 10px;
+}
 
-    /* =========================
-       Footer
-       維持桌機三欄
-    ========================= */
-    footer {
-        width: 100%;
-        height: auto;
+.contact div {
+    text-align:center;
+}
 
-        padding: 20px 0 12px;
-    }
-    .contact {
-        width: 95%;
+.contact h3 {
+    font-size:14px;
+}
 
-        margin: 0 auto;
+.contact a {
+    font-size:12px;
+}
 
-        display: flex;
-        flex-direction: row;
-
-        justify-content: space-between;
-        align-items: flex-start;
-    }
-    .contact > div {
-        flex: 1;
-        min-width: 0;
-
-        padding: 0 5px;
-
-        text-align: center;
-    }
-    /* Footer icon */
-    .contact i {
-        font-size: 20px;
-    }
-    /* Phone / Email / 104 */
-    .contact h3 {
-        font-size: 13px;
-
-        margin-top: 5px;
-    }
-    /* 電話、信箱、View Profile */
-    .contact a {
-        font-size: 10px;
-
-        word-break: break-word;
-        overflow-wrap: anywhere;
-    }
-    /* Copyright */
-    .copyright {
-        font-size: 10px;
-
-        margin-top: 15px;
-
-        text-align: center;
-    }
-
+.copyright {
+    font-size:12px;
+}
 }
