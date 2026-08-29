@@ -486,9 +486,13 @@ footer {
 @media screen and (max-width:768px){
 
 body{
+    margin:0 !important;
+    padding:0 !important;
+}
+
+footer{
     display:block;
-    min-height:0;
+    margin-bottom:-1px !important;
 }
 
 }
-
