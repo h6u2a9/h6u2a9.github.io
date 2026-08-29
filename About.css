@@ -483,3 +483,21 @@ footer {
         text-align: center;
     }
 }
+
+@media screen and (max-width:768px){
+
+body{
+    overflow-x:hidden;
+}
+
+main{
+    min-height:0 !important;
+    height:auto !important;
+    flex:none !important;
+}
+
+footer{
+    margin-bottom:0 !important;
+}
+
+}
