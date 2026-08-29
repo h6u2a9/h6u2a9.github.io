@@ -293,13 +293,13 @@ main{
 
     .me h2{
         font-size:38px;
-        margin-bottom:15px;
+        margin:0 0 5px;
     }
 
 
     .subtitle{
-        width:90%;
-        max-width:350px;
+        width:100%;
+        max-width:380px;
         margin:0 auto 25px;
         font-size:22px;
         line-height:1.5;
